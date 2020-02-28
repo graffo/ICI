@@ -1,0 +1,385 @@
+/* Variáveis */ 
+:root {
+    --azul: #3f578b;
+}
+/* Reset */ 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+    vertical-align: baseline;
+    color: inherit;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+whitespace{
+    display: none;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+html{
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+body, html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    color: #5b5b5b;
+}
+a:hover{
+    color: inherit;
+    text-decoration: none;
+}
+/* Header */ 
+header{
+    background: url('images/header-bg.png') no-repeat center top;
+    background-size: cover;
+    padding: 50px 0 170px 0;
+}
+h1{
+    background:  url('images/logo-ici-branca.png') no-repeat center center;
+    text-indent: -999999em;
+    height: 112px;
+    display: inline-block;
+    margin-bottom: 70px;
+}
+nav a{
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+    display: inline;
+    line-height: 110px;
+    padding: 10px 0;
+    margin: 0 10px;
+}
+nav .active, nav a:hover{
+    border-bottom: 4px solid #fff;
+    color: #fff;
+    text-decoration: none;
+}
+.info_img{
+    margin-left: 20px;
+}
+.info_img img{
+    width: 100%;
+}
+.tit_banner{
+    color: #fff;
+    font-size: 16px;
+    font-weight: 300;
+}
+.tit_banner h2{
+    font-weight: 900;
+    font-size: 42px;
+    margin: 20px 0;
+}
+.solucoes h2{
+    font-size: 40px;
+    color: var(--azul);
+    font-weight: 700;
+    width: 50%;
+    text-align: center;
+    margin: 10px auto 40px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #c0c0c0;
+}
+.solucoes h2 span{
+    color: #4a4a4a;
+}
+.box{
+    background: #3f578b;
+    border-radius: 20px;
+    overflow: hidden;
+    -webkit-box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.24);
+    -moz-box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.24);
+    box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.24);
+    width: 22%;
+    color: #fff;
+    margin: 50px 17px 70px;
+}
+.box:hover{
+    color: #fff;
+}
+.box div{
+    border: 4px solid #e6e6e6;
+    border-radius: 20px;
+    background: #fff;
+    padding: 10px 23px;
+}
+.box h3{
+    font-weight: bold;
+    font-size: 18px;
+    margin: 15px 20px 5px;
+    text-align: center;
+}
+.box span{
+    margin: 0 14px 15px;
+    float: left;
+    font-weight: 300;
+    font-size: 12px;
+}
+
+.cases h2{
+    font-size: 40px;
+    color: var(--azul);
+    font-weight: 700;
+    width: 50%;
+    text-align: center;
+    margin: 10px auto 40px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #c0c0c0;
+}
+.cases h2 span{
+    color: #4a4a4a;
+}
+
+.case{
+    width: 47%;
+    overflow: hidden;
+    display: inline-block;
+    border: 4px solid #e6e6e6;
+    border-radius: 20px;
+    background: #fff;
+    position: relative;
+    font-size: 16px;
+    margin: 20px 15px;
+}
+.cases row:first-child{
+    margin-bottom: 150px;
+}
+.case .case_img{
+    width: 45%;
+    display: inline-block;
+    height: 220px;
+    border-radius: 0 20px 20px 0 ;
+    overflow: hidden;
+}
+.case .div_texto{
+    display: inline-block;
+    width: 47%;
+    margin: 10px 20px;
+
+}
+.case .div_texto h3{
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--azul);
+    margin: 15px 0 20px 0;
+}
+.case .saiba-mais{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: var(--azul);
+    color: #fff;
+    padding: 10px 25px;
+    border-radius: 20px 0 0;
+}
+.link{
+    width: 60%;
+    display: block;
+    margin: 50px  auto;
+    background-color: var(--azul);
+    color: #fff;
+    border-radius: 40px;
+    padding: 20px 60px;
+    -webkit-box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.24);
+    -moz-box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.24);
+    box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.24);
+    text-align: center;
+    font-weight: bold;
+}
+.link:hover{
+    color: #fff;
+}
+
+footer{
+    margin-top: 150px;
+    border-top: 1px solid #3f578b;
+}
+
+/* CONTATO */
+footer .contato {
+	padding: 70px 0 55px;
+}
+
+	footer .contato h3 {
+		color: #055a99;
+		font-size: 1.286em;
+		margin: 0 0 24px;
+		font-family: 'Roboto', Arial, Helvetica, sans-serif;
+	}
+
+	footer .contato a,
+	footer .contato a:hover {
+		color: #505050;
+		text-decoration: none;
+		border-radius: 50px;
+	}
+
+	footer .contato .selo {
+		background: #4f8b4f;
+		font-size: 65px;
+		color: #ffffff;
+		border-radius: 5px;
+		padding: 2px;
+		margin-right: 12px;
+	}
+
+	footer .contato ul {
+		list-style: none;
+		padding: 0;
+		margin-bottom: 25px;
+	}
+
+		footer .contato ul a {
+			padding: 0 0 8px;
+			display: block;
+			font-family: 'Roboto', Arial, Helvetica, sans-serif;
+		}
+
+			footer .contato ul a:hover {
+				text-decoration: underline;
+			}
+
+	footer .contato .social h3 {
+		margin-top: 24px;
+	}
+
+		footer .contato .social h3:first-child {
+			margin-top: 0;
+		}
+
+	footer .contato .social i {
+		font-size: 35px;
+		position: relative;
+	}
+
+	footer .contato .social li {
+		display: inline-block;
+	}
+
+	footer .contato .social a,
+	footer .contato .social a:hover {
+		margin-right: 8px;
+		transition: all 0.2s ease-in-out 0s;
+		text-decoration: none;
+		padding: 0;
+	}
+
+		footer .contato .social a:hover i {
+			bottom: 2px;
+		}
+
+	footer .contato .form-control {
+		margin-bottom: 15px;
+		border-color: #acacac;
+		border-radius: 50px;
+	}
+
+	footer .contato .btn:hover {
+		color: #ffffff;
+	}
+
+footer .certificacoes span,
+footer .certificacoes img {
+	margin-right: 25px;
+	margin-bottom: 25px;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.btnEnviar {
+	font-size: 1.2em;
+	font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+/* BARRA ENDEREÇO */
+.enderecoRodape {
+	background: #f5f5f5;
+	color: #505050;
+	font-family: 'Roboto', Arial, Helvetica, sans-serif;
+	font-size: 0.857em;
+	padding: 20px 0;
+}
+
+	.enderecoRodape span {
+		margin: 0 12px;
+		display: inline-block;
+	}
+
+	.enderecoRodape a {
+		color: #054a99;
+	}
+
+/* BARRA RODAPÉ */
+footer .barraRodape {
+	background: url(https://www.ici.curitiba.org.br/Include/Design/img/detRodape.png) repeat 0 0 #02406e;
+	color: #ffffff;
+	padding: 15px 0;
+}
+
+	footer .barraRodape .icon-logoICI {
+		font-size: 45px;
+		margin-right: 45px;
+		vertical-align: middle;
+		float: left;
+	}
+
+		footer .barraRodape .icon-logoICI span:before {
+			color: #ffffff !important;
+		}
+
+	footer .barraRodape .direitos {
+		padding: 10px 0;
+		float: left;
+	}
+
+	footer .barraRodape .text-right {
+        font-family: 'Roboto', Arial, Helvetica, sans-serif;
+        font-weight: bold;
+	}
+
+		footer .barraRodape .text-right i {
+			display: inline-block;
+			padding: 10px 0;
+			font-size: 22px;
+			vertical-align: middle;
+		}
+
+	footer .barraRodape #linkTopo {
+		color: #ffffff;
+		margin-left: 10px;
+	}
